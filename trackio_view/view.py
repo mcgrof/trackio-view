@@ -1039,8 +1039,13 @@ class TrackIOViewer:
                 # Store or update the metrics for this iteration
                 if iter_num not in metrics_by_iter:
                     metrics_by_iter[iter_num] = {}
+                # Support multiple loss field names (train_loss, train_loss_step, val_loss)
                 if "train_loss" in entry:
                     metrics_by_iter[iter_num]["train_loss"] = entry["train_loss"]
+                elif "train_loss_step" in entry:
+                    metrics_by_iter[iter_num]["train_loss"] = entry["train_loss_step"]
+                elif "val_loss" in entry:
+                    metrics_by_iter[iter_num]["train_loss"] = entry["val_loss"]
                 if "learning_rate" in entry:
                     metrics_by_iter[iter_num]["learning_rate"] = entry["learning_rate"]
                 if "sparsity" in entry:
