@@ -267,7 +267,7 @@ The package uses:
 
 ```bash
 # Clone the repository
-git clone https://github.com/wandb/trackio.git
+git clone https://github.com/mcgrof/trackio-view.git
 cd trackio-view
 
 # Install in development mode
