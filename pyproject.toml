@@ -1,0 +1,86 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trackio-view"
+version = "0.1.0"
+description = "Terminal-based dashboard for TrackIO experiment tracking"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Luis Chamberlain", email = "mcgrof@kernel.org"}
+]
+maintainers = [
+    {name = "Luis Chamberlain", email = "mcgrof@kernel.org"}
+]
+keywords = ["machine-learning", "experiment-tracking", "terminal-ui", "gpu-monitoring", "ml-ops"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: System :: Monitoring",
+]
+dependencies = [
+    "trackio>=0.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov",
+    "ruff",
+]
+rich = [
+    "rich>=13.0.0",
+]
+nvidia = [
+    "nvidia-ml-py>=11.0.0",
+]
+all = [
+    "rich>=13.0.0",
+    "nvidia-ml-py>=11.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/wandb/trackio"
+Documentation = "https://docs.claude.com/trackio"
+Repository = "https://github.com/wandb/trackio"
+Issues = "https://github.com/wandb/trackio/issues"
+
+[project.scripts]
+trackio-view = "trackio_view.view:main"
+
+[tool.setuptools]
+packages = ["trackio_view"]
+
+[tool.setuptools.package-data]
+trackio_view = ["py.typed"]
+
+[tool.setuptools.package-dir]
+assets = "assets"
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"

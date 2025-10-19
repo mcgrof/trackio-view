@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+include CONTRIBUTING
+include pyproject.toml
+recursive-include LICENSES *
+recursive-include trackio_view *.py
+recursive-include tests *.py
+recursive-include assets *.png *.jpg *.gif
