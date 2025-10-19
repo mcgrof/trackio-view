@@ -126,21 +126,29 @@ Options:
 
 #### Zoom Visualization
 
-The interactive zoom feature lets you explore different time scales of your training:
+The interactive zoom feature lets you explore different time scales of your training. Press `+` to zoom in (see fewer, more recent iterations) and `-` to zoom out (see more history).
 
-**Zoom Level 1 - Last 500 iterations:**
+**Real-World Example: Progressive Zoom Levels**
 
-![Zoom Level 1](assets/trackio-view-zoom.png)
+Each level numerically represents zooming in by pressing `+`:
 
-**Zoom Level 2 - Last 200 iterations:**
+**Level 1 - Initial View (500 iterations):**
 
-![Zoom Level 2](assets/trackio-view-zoom-x2.png)
+![Demo Zoom Level 1](assets/demo-screen-shot-level1.png)
+
+**Level 2 - Zoomed In (200 iterations):**
+
+![Demo Zoom Level 2](assets/demo-screen-shot-level2.png)
+
+**Level 3 - Maximum Detail (100 iterations):**
+
+![Demo Zoom Level 3](assets/demo-screen-shot-level3.png)
 
 This feature is perfect for:
-- Getting an overview of entire training runs
-- Examining recent training dynamics in detail
+- Getting an overview of entire training runs (zoom out)
+- Examining recent training dynamics in detail (zoom in)
 - Identifying patterns at different time scales
-- Monitoring convergence behavior
+- Monitoring convergence behavior and spotting anomalies
 
 ### Examples
 
