@@ -1,16 +1,16 @@
 # TrackIO View
 
-Terminal-based dashboard for [TrackIO](https://github.com/wandb/trackio) experiment tracking. Monitor your machine learning experiments directly from the command line with beautiful, real-time visualizations and GPU monitoring.
+Terminal-based dashboard for [TrackIO](https://github.com/gradio-app/trackio) experiment tracking. Monitor your machine learning experiments directly from the command line with beautiful, real-time visualizations and GPU monitoring.
 
 ![TrackIO View Demo](assets/trackio-view-demo-01.png)
 
 ## Background
 
-TrackIO View was originally developed as an enhancement to the main [TrackIO](https://github.com/wandb/trackio) project. Following feedback from the TrackIO maintainers who appreciated the functionality but felt it was out of scope for the core lightweight tracking library, this has been extracted into a standalone package:
+TrackIO View was originally developed as an enhancement to the main [TrackIO](https://github.com/gradio-app/trackio) project. Following feedback from the TrackIO maintainers who appreciated the functionality but felt it was out of scope for the core lightweight tracking library, this has been extracted into a standalone package:
 
 > "This is very cool @mcgrof but is a bit out of scope and will be hard for us to maintain. Trackio is designed to be pretty lightweight and extensible so I'd recommend instead creating a separate trackio-view pypi package which we could link to from our documentation."
 
-This allows TrackIO to remain focused on its core mission while providing users with a powerful, optional terminal-based monitoring tool. The original implementation can be found in the [TrackIO repository](https://github.com/wandb/trackio) on branch `20250921-trackio-view`.
+This allows TrackIO to remain focused on its core mission while providing users with a powerful, optional terminal-based monitoring tool. The original implementation can be found in the [TrackIO repository](https://github.com/gradio-app/trackio) on branch `20250921-trackio-view`.
 
 ## Features
 
@@ -323,10 +323,10 @@ MIT - See LICENSE file for details
 ## Credits
 
 - Inspired by [gputop](https://github.com/mcgrof/gputop) for terminal-based GPU monitoring
-- Built on top of [TrackIO](https://github.com/wandb/trackio) for experiment tracking
+- Built on top of [TrackIO](https://github.com/gradio-app/trackio) for experiment tracking
 
 ## Links
 
 - [TrackIO Documentation](https://docs.claude.com/trackio)
-- [TrackIO GitHub](https://github.com/wandb/trackio)
-- [Issue Tracker](https://github.com/wandb/trackio/issues)
+- [TrackIO GitHub](https://github.com/gradio-app/trackio)
+- [Issue Tracker](https://github.com/gradio-app/trackio/issues)
