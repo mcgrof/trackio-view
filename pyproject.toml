@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Terminal-based dashboard for TrackIO experiment tracking"
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "MIT"}
+license = "MIT"
 authors = [
     {name = "Luis Chamberlain", email = "mcgrof@kernel.org"}
 ]
@@ -20,7 +20,6 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
@@ -53,10 +52,9 @@ all = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/wandb/trackio"
-Documentation = "https://docs.claude.com/trackio"
-Repository = "https://github.com/wandb/trackio"
-Issues = "https://github.com/wandb/trackio/issues"
+Homepage = "https://github.com/mcgrof/trackio-view"
+Repository = "https://github.com/mcgrof/trackio-view"
+Issues = "https://github.com/mcgrof/trackio-view/issues"
 
 [project.scripts]
 trackio-view = "trackio_view.view:main"
